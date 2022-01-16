@@ -2,6 +2,7 @@ package com.rahulcompany.learninggit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,17 +11,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun printline(){
-        println("hello world from feature_printmethod")
+        Toast.makeText(applicationContext,"hello world",Toast.LENGTH_SHORT).show()
     }
 
     fun printline1(){
-        println("hello world from feature_printmethod1")
-    }
+        Toast.makeText(applicationContext,"hello world 1",Toast.LENGTH_SHORT).show()    }
     fun printline2() {
-        println("hello world from feature_printmethod2")
-    }
+        Toast.makeText(applicationContext,"hello world 2",Toast.LENGTH_SHORT).show()    }
 
-    fun simpleprint() = println("hello from simple")
+    fun simpleprint() = Toast.makeText(applicationContext,"hello world simple",Toast.LENGTH_SHORT).show()
 
 
 }
